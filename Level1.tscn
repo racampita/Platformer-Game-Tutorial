@@ -26,7 +26,7 @@ shape = SubResource( 1 )
 
 [node name="block2" type="RigidBody2D" parent="."]
 position = Vector2( 291.606, 260.717 )
-rotation = -0.58337
+rotation = -0.572135
 gravity_scale = 12.0
 __meta__ = {
 "_edit_group_": true
@@ -39,7 +39,7 @@ texture = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="block3" type="RigidBody2D" parent="."]
-position = Vector2( 393.544, 266.381 )
+position = Vector2( 633.288, 232.401 )
 rotation = -0.571355
 gravity_scale = 12.0
 __meta__ = {

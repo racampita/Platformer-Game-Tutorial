@@ -23,7 +23,7 @@ animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "walk",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,

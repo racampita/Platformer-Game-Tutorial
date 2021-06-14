@@ -5,6 +5,7 @@ var velocity = Vector2.ZERO
 const SPEED = 500
 const GRAVITY = 53
 const JUMPFORCE =-1228
+const FRICTION = 0.3
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("right"):
@@ -27,7 +28,7 @@ func _physics_process(delta: float) -> void:
 	
 	velocity = move_and_slide(velocity,Vector2.UP)
 	
-	velocity.x = lerp(velocity.x,0,0.2)
+	velocity.x = lerp(velocity.x,0,FRICTION)
 
 func _on_fallzone_body_entered(body: Node) -> void:
 	get_tree().change_scene("res://Level1.tscn")

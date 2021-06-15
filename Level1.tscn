@@ -40,14 +40,14 @@ tile_data = PoolIntArray( -786292, 1, 0, -720756, 1, 0, -655220, 1, 0, -589684, 
 [node name="coins" type="Node" parent="."]
 
 [node name="coin" parent="coins" instance=ExtResource( 6 )]
-position = Vector2( 8812.76, -64.1446 )
+position = Vector2( 8800, -64 )
 
 [node name="coin2" parent="coins" instance=ExtResource( 6 )]
-position = Vector2( 2820.57, 273.514 )
+position = Vector2( 2816, 256 )
 collision_layer = 1
 
 [node name="coin3" parent="coins" instance=ExtResource( 6 )]
-position = Vector2( 5249.7, 374.308 )
+position = Vector2( 5248, 384 )
 collision_layer = 1
 
 [node name="coin4" parent="coins" instance=ExtResource( 6 )]
@@ -55,7 +55,11 @@ position = Vector2( 3329.58, -381.645 )
 collision_layer = 1
 
 [node name="coin5" parent="coins" instance=ExtResource( 6 )]
-position = Vector2( 4861.64, -437.081 )
+position = Vector2( 4928, -448 )
+collision_layer = 1
+
+[node name="coin6" parent="coins" instance=ExtResource( 6 )]
+position = Vector2( 384, 192 )
 collision_layer = 1
 
 [node name="Steve" parent="." instance=ExtResource( 2 )]

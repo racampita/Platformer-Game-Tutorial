@@ -30,12 +30,7 @@ func _physics_process(delta: float) -> void:
 	velocity = move_and_slide(velocity,Vector2.UP)
 	
 	velocity.x = lerp(velocity.x,0,FRICTION)
-
-	if coins >= 6:
-		get_tree().change_scene("res://Level1.tscn")
 		
 func _on_fallzone_body_entered(body: Node) -> void:
 	get_tree().change_scene("res://Level1.tscn")
 
-func add_coin():
-	coins += 1

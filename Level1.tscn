@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://world_tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://Steve.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Assets/HUD/coin_gold.png" type="Texture" id=7]
 [ext_resource path="res://Assets/fonts/BalsamiqSans-Bold.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://HUD.gd" type="Script" id=9]
+[ext_resource path="res://enemy.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 64, 32 )
@@ -36,11 +37,13 @@ font_data = ExtResource( 8 )
 [node name="Tiles One-Way" type="TileMap" parent="."]
 tile_set = ExtResource( 3 )
 collision_layer = 2
-collision_mask = 17
+collision_mask = 49
 format = 1
 tile_data = PoolIntArray( 262149, 2, 0, 262150, 0, 0, 327685, 1, 0, 327686, 1, 0, 393221, 1, 0, 393222, 1, 0, 458757, 1, 0, 524293, 1, 0, 589829, 1, 0, 589830, 1, 0, 589831, 1, 0 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Tiles One-Way"]
+collision_layer = 2
+collision_mask = 2147483697
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles One-Way/StaticBody2D"]
 position = Vector2( 384, 288 )
@@ -186,6 +189,16 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="enemies" type="Node2D" parent="."]
+
+[node name="enemy" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 837.345, 237.778 )
+
+[node name="enemy2" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 241.149, 366.435 )
+direction = 1
+detects_cliffs = false
 [connection signal="coin_collected" from="coins/coin" to="HUD" method="_on_coin_collected"]
 [connection signal="coin_collected" from="coins/coin2" to="HUD" method="_on_coin_collected"]
 [connection signal="coin_collected" from="coins/coin3" to="HUD" method="_on_coin_collected"]

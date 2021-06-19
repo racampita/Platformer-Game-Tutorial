@@ -78,19 +78,6 @@ position = Vector2( 3328, -384 )
 [node name="coin6" parent="coins" instance=ExtResource( 6 )]
 position = Vector2( 384, 192 )
 
-[node name="Steve" parent="." instance=ExtResource( 2 )]
-position = Vector2( 10.8987, 71.2296 )
-
-[node name="Camera2D" type="Camera2D" parent="Steve"]
-current = true
-limit_left = -477
-limit_top = -700
-limit_right = 8954
-limit_bottom = 600
-drag_margin_h_enabled = true
-smoothing_enabled = true
-editor_draw_limits = true
-
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="Purple Sky" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -199,6 +186,19 @@ position = Vector2( 837.345, 237.778 )
 position = Vector2( 241.149, 366.435 )
 direction = 1
 detects_cliffs = false
+
+[node name="Steve" parent="." instance=ExtResource( 2 )]
+position = Vector2( 10.8987, 71.2296 )
+
+[node name="Camera2D" type="Camera2D" parent="Steve"]
+current = true
+limit_left = -477
+limit_top = -700
+limit_right = 8954
+limit_bottom = 600
+drag_margin_h_enabled = true
+smoothing_enabled = true
+editor_draw_limits = true
 [connection signal="coin_collected" from="coins/coin" to="HUD" method="_on_coin_collected"]
 [connection signal="coin_collected" from="coins/coin2" to="HUD" method="_on_coin_collected"]
 [connection signal="coin_collected" from="coins/coin3" to="HUD" method="_on_coin_collected"]

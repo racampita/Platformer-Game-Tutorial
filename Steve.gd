@@ -32,7 +32,7 @@ func _physics_process(delta: float) -> void:
 	velocity.x = lerp(velocity.x,0,FRICTION)
 		
 func _on_fallzone_body_entered(body: Node) -> void:
-	get_tree().change_scene("res://Level1.tscn")
+	get_tree().change_scene("res://GameOver.tscn")
 	
 func bounce():
 	velocity.y = JUMPFORCE * 0.9
@@ -49,4 +49,4 @@ func ouch(var posx):
 	$Timer.start()
 
 func _on_Timer_timeout() -> void:
-	get_tree().change_scene("res://Level1.tscn")
+	get_tree().change_scene("res://GameOver.tscn")

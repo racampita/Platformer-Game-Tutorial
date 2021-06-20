@@ -36,7 +36,8 @@ func _on_top_checker_body_entered(body: Node) -> void:
 	$sides_checker.set_collision_layer_bit(4,false)
 	$sides_checker.set_collision_mask_bit(0,false)
 	$Timer.start()
-	body.bounce()
+	if body.name == "Steve":
+		body.bounce()
 
 func _on_sides_checker_body_entered(body: Node) -> void:
 	body.ouch(position.x)

@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://MainMenuButton.gd" type="Script" id=1]
+[ext_resource path="res://Assets/fonts/BalsamiqSans-Bold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/fonts/KiriFont.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 90
+outline_size = 4
+outline_color = Color( 0.113725, 0.0588235, 0.0588235, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 36
+font_data = ExtResource( 2 )
+
+[node name="YouWin" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 2.24487
+margin_top = -4.48987
+margin_right = 1025.24
+margin_bottom = 594.51
+color = Color( 0.980392, 1, 0.431373, 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 233.042
+margin_top = 123.755
+margin_right = 774.042
+margin_bottom = 213.755
+custom_fonts/font = SubResource( 1 )
+text = "YOU WIN!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainMenuButton" type="Button" parent="."]
+margin_left = 397.352
+margin_top = 280.615
+margin_right = 592.352
+margin_bottom = 330.615
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+text = "Main Menu"
+flat = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="MainMenuButton" to="MainMenuButton" method="_on_MainMenuButton_pressed"]

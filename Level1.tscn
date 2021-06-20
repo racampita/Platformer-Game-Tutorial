@@ -106,7 +106,7 @@ motion_scale = Vector2( 0.4, 0.4 )
 motion_mirroring = Vector2( 1600, 1200 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/middle Blocks"]
-position = Vector2( 0, -12 )
+position = Vector2( 47.6221, -21.5244 )
 scale = Vector2( 2.5, 2.5 )
 texture = ExtResource( 5 )
 centered = false
@@ -185,10 +185,113 @@ position = Vector2( 837.345, 237.778 )
 [node name="enemy2" parent="enemies" instance=ExtResource( 10 )]
 position = Vector2( 241.149, 366.435 )
 direction = 1
-detects_cliffs = false
+
+[node name="enemy3" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 1225.34, 290.24 )
+direction = 1
+
+[node name="enemy4" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 1533.29, 109.276 )
+direction = 1
+
+[node name="enemy5" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 1819.03, -109.785 )
+direction = 1
+
+[node name="enemy6" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 2060.31, -103.436 )
+direction = 1
+
+[node name="enemy7" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 2667.44, 299.99 )
+direction = 1
+
+[node name="enemy8" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 2436.99, 301.112 )
+direction = 1
+
+[node name="enemy9" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 2780.99, -100.261 )
+direction = 1
+
+[node name="enemy10" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 3054.02, -106.611 )
+direction = 1
+
+[node name="enemy11" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 3346.11, 93.402 )
+direction = 1
+
+[node name="enemy12" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 3863.6, 214.044 )
+direction = 1
+
+[node name="enemy13" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 4603.33, 417.232 )
+direction = 1
+
+[node name="enemy14" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 4743.02, -468.538 )
+direction = 1
+
+[node name="enemy15" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 4590.63, -43.1145 )
+direction = 1
+
+[node name="enemy16" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 5787.53, 204.52 )
+direction = 1
+
+[node name="enemy17" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 5987.54, 207.695 )
+direction = 1
+
+[node name="enemy18" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 6193.9, 217.219 )
+direction = 1
+
+[node name="enemy19" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 6343.12, 194.996 )
+direction = 1
+
+[node name="enemy20" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 6562.18, 1.33279 )
+direction = 1
+
+[node name="enemy21" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 6711.22, 13.8539 )
+direction = 1
+
+[node name="enemy22" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 6879.66, -5.01675 )
+direction = 1
+
+[node name="enemy23" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 7482.87, 93.4021 )
+direction = 1
+
+[node name="enemy24" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 7641.61, 87.0525 )
+direction = 1
+
+[node name="enemy25" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 7835.1, 87.0525 )
+direction = 1
+
+[node name="enemy26" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 8044.81, 248.967 )
+direction = 1
+
+[node name="enemy27" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 8540.26, 156.72 )
+direction = 1
+
+[node name="enemy28" parent="enemies" instance=ExtResource( 10 )]
+position = Vector2( 8327.01, 214.223 )
+direction = 1
 
 [node name="Steve" parent="." instance=ExtResource( 2 )]
-position = Vector2( 10.8987, 71.2296 )
+position = Vector2( -80.7766, 113.604 )
 
 [node name="Camera2D" type="Camera2D" parent="Steve"]
 current = true

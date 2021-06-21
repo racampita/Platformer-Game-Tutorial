@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/jingles_PIZZA07.ogg-e99e184096f6938d8427cb04e6eb9dd3.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/jingles_PIZZA07.ogg"
+dest_files=[ "res://.import/jingles_PIZZA07.ogg-e99e184096f6938d8427cb04e6eb9dd3.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

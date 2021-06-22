@@ -20,13 +20,13 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 20, 13 )
+extents = Vector2( 23.1803, 13.1665 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 19.9066, 2.50864 )
+extents = Vector2( 22.6843, 2.50864 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 21.8908, 10.9336 )
+extents = Vector2( 28.1409, 10.9336 )
 
 [node name="enemy" type="KinematicBody2D"]
 collision_layer = 16
